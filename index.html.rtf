@@ -1,0 +1,403 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8" />\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+  <title>Your Name | Portfolio</title>\
+  <style>\
+    :root \{\
+      --bg: #050816;\
+      --bg-soft: #0f172a;\
+      --accent: #38bdf8;\
+      --accent-soft: rgba(56,189,248,0.15);\
+      --text: #e5e7eb;\
+      --muted: #9ca3af;\
+      --radius-xl: 22px;\
+      --radius-full: 999px;\
+      --shadow-soft: 0 18px 60px rgba(15,23,42,0.55);\
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, -system-ui, sans-serif;\
+      --transition-fast: 0.22s ease;\
+    \}\
+    *\{margin:0;padding:0;box-sizing:border-box\}\
+    body\{\
+      font-family:var(--font-main);\
+      background:radial-gradient(circle at top,#111827 0,#020817 40%,#000 100%);\
+      color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;\
+    \}\
+    a\{color:inherit;text-decoration:none\}\
+    img\{max-width:100%;display:block\}\
+    .page\{max-width:1120px;margin:0 auto;padding:22px 18px 40px;\}\
+    header\{\
+      position:sticky;top:0;z-index:40;backdrop-filter:blur(16px);\
+      background:radial-gradient(circle at top left,rgba(56,189,248,0.12),rgba(9,9,11,0.98));\
+      border-bottom:1px solid rgba(148,163,253,0.1);\
+      padding:12px 18px;margin:0 -18px 22px;\
+      display:flex;align-items:center;justify-content:space-between;\
+    \}\
+    .brand\{display:flex;align-items:center;gap:10px;font-size:14px;\}\
+    .brand-logo\{\
+      width:26px;height:26px;border-radius:10px;\
+      background:radial-gradient(circle at 30% 0,#38bdf8,#4f46e5);\
+      box-shadow:0 0 16px rgba(56,189,248,0.9);\
+    \}\
+    .brand span\{display:block;font-weight:600;letter-spacing:0.04em;\}\
+    nav\{display:flex;gap:14px;font-size:12px;color:var(--muted);\}\
+    nav a\{\
+      padding:4px 10px;border-radius:999px;\
+      transition:background var(--transition-fast),color var(--transition-fast),transform var(--transition-fast);\
+    \}\
+    nav a:hover\{\
+      background:rgba(15,23,42,0.9);color:var(--accent);transform:translateY(-1px);\
+    \}\
+    .hero\{\
+      display:grid;grid-template-columns:minmax(0,2.6fr) minmax(220px,1.4fr);\
+      gap:26px;align-items:center;margin-bottom:40px;\
+    \}\
+    .eyebrow\{\
+      display:inline-flex;align-items:center;gap:8px;padding:3px 11px;\
+      border-radius:var(--radius-full);background:rgba(15,23,42,0.96);\
+      border:1px solid rgba(148,163,253,0.22);color:var(--accent);\
+      font-size:10px;text-transform:uppercase;letter-spacing:0.18em;margin-bottom:10px;\
+    \}\
+    .hero-title\{\
+      font-size:clamp(26px,4.1vw,36px);font-weight:650;margin-bottom:10px;\
+    \}\
+    .hero-title span\{color:var(--accent);\}\
+    .hero-subtitle\{\
+      font-size:13px;color:var(--muted);max-width:520px;margin-bottom:18px;\
+    \}\
+    .hero-actions\{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;\}\
+    .btn-primary,.btn-ghost\{\
+      padding:8px 16px;border-radius:var(--radius-full);font-size:12px;\
+      border:1px solid transparent;cursor:pointer;display:inline-flex;\
+      align-items:center;gap:7px;transition:all var(--transition-fast);\
+    \}\
+    .btn-primary\{\
+      background:linear-gradient(to right,#38bdf8,#4f46e5);\
+      color:#0b1020;font-weight:600;box-shadow:var(--shadow-soft);\
+    \}\
+    .btn-primary:hover\{\
+      transform:translateY(-1px);\
+      box-shadow:0 20px 60px rgba(15,23,42,0.9);\
+    \}\
+    .btn-ghost\{\
+      border-color:rgba(148,163,253,0.22);\
+      color:var(--muted);background:rgba(2,6,23,0.96);\
+    \}\
+    .btn-ghost:hover\{\
+      color:var(--accent);background:rgba(10,16,37,1);transform:translateY(-1px);\
+    \}\
+    .hero-meta\{\
+      display:flex;flex-wrap:wrap;gap:14px;font-size:10px;\
+      color:var(--muted);margin-top:4px;\
+    \}\
+    .hero-meta span\{\
+      padding:4px 9px;border-radius:999px;background:rgba(9,9,11,0.96);\
+      border:1px solid rgba(75,85,99,0.55);\
+    \}\
+    .hero-card\{\
+      border-radius:var(--radius-xl);padding:16px 14px;\
+      background:radial-gradient(circle at top right,rgba(56,189,248,0.12),#020817);\
+      border:1px solid rgba(75,85,99,0.7);box-shadow:var(--shadow-soft);\
+      display:flex;flex-direction:column;gap:8px;font-size:11px;\
+    \}\
+    .hero-card h3\{font-size:13px;font-weight:600;margin-bottom:2px;color:var(--accent);\}\
+    .hero-pills\{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;\}\
+    .hero-pill\{\
+      font-size:9px;padding:4px 7px;border-radius:999px;\
+      background:rgba(15,23,42,0.98);\
+      border:1px solid rgba(75,85,99,0.7);color:var(--muted);\
+    \}\
+    section\{margin-bottom:32px;\}\
+    .section-header\{\
+      display:flex;justify-content:space-between;align-items:baseline;\
+      margin-bottom:10px;gap:10px;\
+    \}\
+    .section-title\{font-size:15px;font-weight:600;\}\
+    .section-subtitle\{font-size:10px;color:var(--muted);\}\
+    .cards-grid\{\
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;\
+    \}\
+    .card\{\
+      padding:12px 11px;border-radius:var(--radius-xl);\
+      background:radial-gradient(circle at top,rgba(56,189,248,0.04),#020817);\
+      border:1px solid rgba(31,41,55,0.98);\
+      box-shadow:0 12px 32px rgba(15,23,42,0.7);\
+      transition:transform var(--transition-fast),box-shadow var(--transition-fast),\
+        border-color var(--transition-fast),background var(--transition-fast);\
+      font-size:10px;color:var(--muted);\
+    \}\
+    .card h3\{font-size:12px;font-weight:600;margin-bottom:4px;color:var(--text);\}\
+    .card span.tag\{\
+      display:inline-block;font-size:8px;padding:3px 7px;border-radius:999px;\
+      background:rgba(15,23,42,1);border:1px solid rgba(75,85,99,0.7);\
+      color:var(--accent);margin-bottom:4px;\
+    \}\
+    .card ul\{list-style:none;margin-top:4px;\}\
+    .card ul li\{\
+      margin-bottom:2px;position:relative;padding-left:10px;\
+    \}\
+    .card ul li::before\{\
+      content:"\'95";position:absolute;left:0;color:var(--accent);font-size:10px;\
+    \}\
+    .card:hover\{\
+      transform:translateY(-3px);\
+      box-shadow:0 22px 70px rgba(15,23,42,0.95);\
+      border-color:rgba(56,189,248,0.38);\
+      background:radial-gradient(circle at top,var(--accent-soft),#020817);\
+    \}\
+    .skills-list\{\
+      display:flex;flex-wrap:wrap;gap:6px;font-size:9px;\
+    \}\
+    .skills-list span\{\
+      padding:4px 8px;border-radius:999px;\
+      background:rgba(9,9,11,0.98);\
+      border:1px solid rgba(55,65,81,0.9);\
+      color:var(--muted);transition:all var(--transition-fast);\
+    \}\
+    .skills-list span:hover\{\
+      border-color:var(--accent);color:var(--accent);transform:translateY(-1px);\
+    \}\
+    .contact\{\
+      display:grid;\
+      grid-template-columns:minmax(0,2fr) minmax(0,1.4fr);\
+      gap:16px;align-items:start;font-size:10px;\
+    \}\
+    .contact-details p\{color:var(--muted);margin-bottom:6px;\}\
+    .contact-details a.highlight\{\
+      color:var(--accent);font-weight:500;\
+    \}\
+    form\{display:grid;gap:6px;\}\
+    label\{font-size:9px;color:var(--muted);\}\
+    input,textarea\{\
+      width:100%;padding:7px 9px;border-radius:12px;\
+      border:1px solid rgba(55,65,81,0.9);\
+      background:rgba(2,6,23,0.98);color:var(--text);\
+      font-size:10px;outline:none;\
+      transition:border-color var(--transition-fast),\
+        box-shadow var(--transition-fast),\
+        background var(--transition-fast),\
+        transform var(--transition-fast);\
+    \}\
+    input:focus,textarea:focus\{\
+      border-color:var(--accent);\
+      box-shadow:0 0 16px rgba(56,189,248,0.3);\
+      background:#020817;transform:translateY(-1px);\
+    \}\
+    textarea\{resize:vertical;min-height:70px;\}\
+    .contact button\{margin-top:2px;justify-content:center;font-size:10px;\}\
+    footer\{\
+      margin-top:24px;padding-top:12px;\
+      border-top:1px solid rgba(31,41,55,0.9);\
+      font-size:8px;color:var(--muted);\
+      display:flex;justify-content:space-between;\
+      gap:8px;flex-wrap:wrap;\
+    \}\
+    footer a\{color:var(--accent);font-size:8px;\}\
+    @media (max-width:720px)\{\
+      header\{flex-direction:column;align-items:flex-start;gap:6px;\}\
+      nav\{flex-wrap:wrap;\}\
+      .hero\{grid-template-columns:1fr;\}\
+      .contact\{grid-template-columns:1fr;\}\
+    \}\
+  </style>\
+</head>\
+<body>\
+  <div class="page">\
+    <header>\
+      <div class="brand">\
+        <div class="brand-logo"></div>\
+        <div>\
+          <span>Your Name</span>\
+          <small style="font-size:9px;color:var(--muted);">\
+            Your Target Role (e.g. Data / Business Analyst)\
+          </small>\
+        </div>\
+      </div>\
+      <nav>\
+        <a href="#about">About</a>\
+        <a href="#skills">Skills</a>\
+        <a href="#projects">Projects</a>\
+        <a href="#experience">Experience</a>\
+        <a href="#contact">Contact</a>\
+      </nav>\
+    </header>\
+\
+    <main>\
+      <section class="hero">\
+        <div>\
+          <div class="eyebrow">\
+            <span>Actively looking for opportunities</span>\
+          </div>\
+          <h1 class="hero-title">\
+            Hi, I\'92m <span>Your Name</span> \'97 I help teams make better decisions with data.\
+          </h1>\
+          <p class="hero-subtitle">\
+            Brief line about you. Example:\
+            "Analytics professional with experience in reporting, dashboards\
+            and turning raw numbers into clear insights."\
+          </p>\
+          <div class="hero-actions">\
+            <a href="#contact" class="btn-primary">Contact Me</a>\
+            <a href="#" class="btn-ghost" target="_blank">View Resume</a>\
+          </div>\
+          <div class="hero-meta">\
+            <span>Open to: Analyst / BI / Data roles</span>\
+            <span>Location: Your City \'b7 Open to remote</span>\
+          </div>\
+        </div>\
+\
+        <aside class="hero-card">\
+          <h3>Snapshot</h3>\
+          <p>\
+            3\'965 lines summarizing your experience, tools and domains\
+            you\'92ve worked in (e.g. banking, marketing, operations).\
+          </p>\
+          <div class="hero-pills">\
+            <div class="hero-pill">Power BI / Tableau</div>\
+            <div class="hero-pill">SQL &amp; Excel</div>\
+            <div class="hero-pill">Reporting</div>\
+            <div class="hero-pill">Stakeholder Communication</div>\
+          </div>\
+        </aside>\
+      </section>\
+\
+      <section id="about">\
+        <div class="section-header">\
+          <h2 class="section-title">About</h2>\
+          <p class="section-subtitle">Short and professional.</p>\
+        </div>\
+        <p style="font-size:10px;color:var(--muted);max-width:760px;">\
+          Write 4\'966 lines about your background, strengths and what you\'92re looking for.\
+          Keep it simple, clear and aligned to the roles you want.\
+        </p>\
+      </section>\
+\
+      <section id="skills">\
+        <div class="section-header">\
+          <h2 class="section-title">Skills</h2>\
+          <p class="section-subtitle">Only what matches job descriptions.</p>\
+        </div>\
+        <div class="skills-list">\
+          <span>Power BI / Tableau</span>\
+          <span>Advanced Excel</span>\
+          <span>SQL</span>\
+          <span>Data Cleaning</span>\
+          <span>Dashboard Design</span>\
+          <span>Business Reporting</span>\
+        </div>\
+      </section>\
+\
+      <section id="projects">\
+        <div class="section-header">\
+          <h2 class="section-title">Projects</h2>\
+          <p class="section-subtitle">Show 2\'964 strong examples.</p>\
+        </div>\
+        <div class="cards-grid">\
+          <article class="card">\
+            <span class="tag">Dashboard</span>\
+            <h3>Project 1 Title</h3>\
+            <p>1\'962 lines: what it does and why it matters.</p>\
+            <ul>\
+              <li>Mention tools used.</li>\
+              <li>Mention impact (e.g. time saved / clarity).</li>\
+            </ul>\
+          </article>\
+\
+          <article class="card">\
+            <span class="tag">Analysis</span>\
+            <h3>Project 2 Title</h3>\
+            <p>1\'962 lines summary.</p>\
+            <ul>\
+              <li>Focus on how you approached the problem.</li>\
+              <li>Highlight outcome / insight.</li>\
+            </ul>\
+          </article>\
+        </div>\
+      </section>\
+\
+      <section id="experience">\
+        <div class="section-header">\
+          <h2 class="section-title">Experience</h2>\
+          <p class="section-subtitle">Use impact bullet points.</p>\
+        </div>\
+        <div class="cards-grid">\
+          <article class="card">\
+            <h3>Job Title</h3>\
+            <p><strong>Company</strong> \'b7 Dates</p>\
+            <ul>\
+              <li>What you owned.</li>\
+              <li>Tools you used.</li>\
+              <li>Measurable impact if possible.</li>\
+            </ul>\
+          </article>\
+          <article class="card">\
+            <h3>Previous Role / Internship</h3>\
+            <p><strong>Company</strong> \'b7 Dates</p>\
+            <ul>\
+              <li>Highlight analytics or reporting work.</li>\
+            </ul>\
+          </article>\
+        </div>\
+      </section>\
+\
+      <section id="contact">\
+        <div class="section-header">\
+          <h2 class="section-title">Contact</h2>\
+          <p class="section-subtitle">Make reaching you easy.</p>\
+        </div>\
+        <div class="contact">\
+          <div class="contact-details">\
+            <p>Interested in roles in <strong>Analytics / BI / Data</strong>.</p>\
+            <p>\
+              Email:\
+              <a class="highlight" href="mailto:your.email@example.com">\
+                your.email@example.com\
+              </a>\
+            </p>\
+            <p>\
+              LinkedIn:\
+              <a class="highlight" href="https://www.linkedin.com/in/YOUR_HANDLE" target="_blank">\
+                linkedin.com/in/YOUR_HANDLE\
+              </a>\
+            </p>\
+          </div>\
+          <form\
+            onsubmit="event.preventDefault(); window.location.href='mailto:your.email@example.com?subject=Opportunity%20for%20you&body=Hi%20Your%20Name,';">\
+            <div>\
+              <label for="name">Your Name</label>\
+              <input id="name" type="text" placeholder="Enter your name" required />\
+            </div>\
+            <div>\
+              <label for="email">Your Email</label>\
+              <input id="email" type="email" placeholder="Enter your email" required />\
+            </div>\
+            <div>\
+              <label for="msg">Message</label>\
+              <textarea id="msg" placeholder="Short message about the opportunity"></textarea>\
+            </div>\
+            <button type="submit" class="btn-primary">Send Message</button>\
+          </form>\
+        </div>\
+      </section>\
+    </main>\
+\
+    <footer>\
+      <div>\'a9 <span id="year"></span> Your Name. All rights reserved.</div>\
+      <div>Last updated: <span>2025</span></div>\
+    </footer>\
+  </div>\
+\
+  <script>\
+    document.getElementById("year").textContent = new Date().getFullYear();\
+  </script>\
+</body>\
+</html>\
+}
